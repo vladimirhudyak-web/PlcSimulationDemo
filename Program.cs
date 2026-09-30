@@ -92,7 +92,13 @@ sealed class PlcSimulator
     private int  _motorDirection;       // +1 вперёд, -1 назад
     private int  _liftTimer;            // сколько циклов ещё поднимаем машину
 
-    public PlcSimulator(int port) => _listener = new TcpListener(IPAddress.Loopback, port);
+    //public PlcSimulator(int port) => _listener = new TcpListener(IPAddress.Loopback, port);
+
+    public PlcSimulator(int port)
+    {
+        _listener = new TcpListener(IPAddress.Loopback, port);
+    }
+
 
     public void Start()
     {
