@@ -5,8 +5,4 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="MlNetDemo/**" />
-    <None Remove="MlNetDemo/**" />
-  </ItemGroup>
 </Project>
