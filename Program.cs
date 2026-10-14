@@ -1,15 +1,15 @@
 // ============================================================================
-//  PlcSimulationDemo — симуляция схемы «Приложение → Сервер C# → PLC → железо»
-//  .NET 8, один файл, без внешних библиотек.
+//  PlcSimulationDemo — simulation of the "Application → C# Server → PLC → Hardware" pipeline
+//  .NET 8, single file, no external libraries.
 //
-//  Как запустить:   dotnet run
+//  How to run:   dotnet run
 //
-//  Что внутри:
-//   * PlcSimulator  — «контроллер»: TCP-сервер с регистрами (как в Modbus)
-//                     и циклом сканирования: входы → логика → выходы.
-//   * ParkingServer — «сервер на C#»: очередь заказов, пишет команды
-//                     в регистры PLC и опрашивает его состояние.
-//   * Main          — «приложение / киоск»: клиенты заказывают машины.
+//  What's inside:
+//   * PlcSimulator  — the "controller": a TCP server with registers (Modbus-style)
+//                     and a scan cycle: inputs → logic → outputs.
+//   * ParkingServer — the "C# server": an order queue; writes commands
+//                     to the PLC registers and polls its state.
+//   * Main          — the "application / kiosk": customers request their cars.
 // ============================================================================
 
 using System.Net;
